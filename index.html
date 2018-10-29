@@ -1,0 +1,45 @@
+<html>
+
+<head>
+	<title>Brick Breaker</title>
+	<meta charset="UTF-8" />
+	<style>
+		body {
+			background-color: #333;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		#gameScreen {
+			background-color: white;
+			border: 1px solid black;
+			box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+		}
+
+		p {
+			position: absolute;
+			top: 0px;
+			font-size: 2rem;
+			font-weight: bold;
+			color: #333;
+		}
+
+		img {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+	<img id="img_ball" src="./assets/images/ball.png">
+	<img id="img_brick" src="./assets/images/brick.png">
+
+	<canvas width="800" height="600" id="gameScreen"></canvas>
+	<p>Lives: <span id="lives_span"></span></p>
+
+	<script src="./src/index.js"></script>
+</body>
+
+</html>
